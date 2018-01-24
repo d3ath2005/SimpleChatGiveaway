@@ -1,0 +1,29 @@
+# SimpleChatGiveaway Configuration File -- V.1.0
+# Author: d3ath2005
+
+# Chat color codes are enabled.
+
+# Variables:
+# %p = player's name.
+# %t = time left for the countdown.
+
+# Amount of time (countdown) till winner is announced, time unit is seconds.
+timer: 3
+
+# Message to announce when a player is chosen.
+player-chosen: "&5Server &7» &5%p has won the giveaway!"
+
+# Countdown message.
+# If a second is left and you have seconds/secs in your message it'll be changed to second/sec.
+countdown: "&5Server &7» &5%t seconds left to announce giveaway winner!"
+
+# No players online (Message is sent to the command executor).
+not-enough-players: "&5Server &7» &5Sorry, there aren't enough players online."
+
+# Not enough permissions (Permission node is scg.start).
+no-perm: "&5Server &7» &5Insufficient permissions."
+
+# Commands to execute if a player has been chosen, you may have this empty.
+# Please note that commands are executed by the Console.
+Commands:
+ - "say Enjoy whatever you got %p :)"
