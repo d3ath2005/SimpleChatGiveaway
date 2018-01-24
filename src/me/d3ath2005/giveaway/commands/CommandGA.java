@@ -45,8 +45,10 @@ public class CommandGA implements CommandExecutor {
 							Bukkit.broadcastMessage(color((playerchoose)));
 
 							List<String> cmds = main.getConfig().getStringList("Commands");
-							cmds.forEach(s -> Bukkit.dispatchCommand(Bukkit.getConsoleSender(),
-									s.replace("%p", p.getName())));
+							if (!cmds.isEmpty()) {
+								cmds.forEach(s -> Bukkit.dispatchCommand(Bukkit.getConsoleSender(),
+										s.replace("%p", p.getName())));
+							}
 
 							cancel();
 						} else if (timer == 1) {

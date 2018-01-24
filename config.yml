@@ -26,4 +26,4 @@ no-perm: "&5Server &7» &5Insufficient permissions."
 # Commands to execute if a player has been chosen, you may have this empty.
 # Please note that commands are executed by the Console.
 Commands:
- - "say Enjoy whatever you got %p :)"
+ - "say Hello there!"

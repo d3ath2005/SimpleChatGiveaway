@@ -9,7 +9,6 @@ public class MainClass extends JavaPlugin {
 		getLogger().info("SCG has been enabled.");
 		generateConfig();
 		registerCmds();
-
 	}
 
 	public void onDisable() {
