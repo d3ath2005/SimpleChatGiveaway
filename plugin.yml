@@ -1,5 +1,5 @@
 name: SimpleChatGiveaway
-version: 1.0
+version: 1.1
 main: me.d3ath2005.giveaway.MainClass
 author: d3ath2005
 commands:

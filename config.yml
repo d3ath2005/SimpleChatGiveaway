@@ -1,4 +1,4 @@
-# SimpleChatGiveaway Configuration File -- V.1.0
+# SimpleChatGiveaway Configuration File -- V.1.1
 # Author: d3ath2005
 
 # Chat color codes are enabled.
@@ -23,7 +23,8 @@ not-enough-players: "&5Server &7» &5Sorry, there aren't enough players online."
 # Not enough permissions (Permission node is scg.start).
 no-perm: "&5Server &7» &5Insufficient permissions."
 
-# Commands to execute if a player has been chosen, you may have this empty.
+# Commands to execute if a player has been chosen.
 # Please note that commands are executed by the Console.
+# Change to "Commands: []" if you don't want any command to be executed.
 Commands:
  - "say Hello there!"
