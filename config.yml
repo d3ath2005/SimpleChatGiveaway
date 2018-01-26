@@ -1,4 +1,4 @@
-# SimpleChatGiveaway Configuration File -- V.1.1
+# SimpleChatGiveaway Configuration File -- V.1.2
 # Author: d3ath2005
 
 # Chat color codes are enabled.
@@ -23,8 +23,21 @@ not-enough-players: "&5Server &7» &5Sorry, there aren't enough players online."
 # Not enough permissions (Permission node is scg.start).
 no-perm: "&5Server &7» &5Insufficient permissions."
 
+# Not enough arguments or Not enough arguments.
+unknown-args: "&5Server &7» &5Unknown arguments! For help, do /giveaway help."
+
+# Config reload success.
+config-reloaded: "&5Server &7» &5Configuration file has been reloaded."
+
 # Commands to execute if a player has been chosen.
 # Please note that commands are executed by the Console.
 # Change to "Commands: []" if you don't want any command to be executed.
 Commands:
  - "say Hello there!"
+
+# Change to false to disable title message.
+send-title: true
+
+# A title message is two parts, Title (main) and Subtitle (message below)
+title-msg: "&5%p"
+subtitle-msg: "&7has won the giveaway"

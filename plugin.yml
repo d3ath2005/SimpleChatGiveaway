@@ -1,8 +1,7 @@
 name: SimpleChatGiveaway
-version: 1.1
+version: 1.2
 main: me.d3ath2005.giveaway.MainClass
 author: d3ath2005
 commands:
     giveaway:
-      description: Start the giveaway.
-      permission: scg.start
+      description: Main plugin command.

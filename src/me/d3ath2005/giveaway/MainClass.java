@@ -5,14 +5,21 @@ import org.bukkit.plugin.java.JavaPlugin;
 import me.d3ath2005.giveaway.commands.CommandGA;
 
 public class MainClass extends JavaPlugin {
+	@SuppressWarnings("unused")
 	public void onEnable() {
-		getLogger().info("SCG has been enabled.");
-		generateConfig();
-		registerCmds();
+		//if (Utils.hasDepend(this, this)) {
+			getLogger().info("Enabled");
+			/* Utils.generateFile(this, "winners.yml"); */
+			Metrics metrics = new Metrics(this);
+			generateConfig();
+			registerCmds();
+		//} else {
+//
+		//}
 	}
 
 	public void onDisable() {
-		getLogger().info("SCG has been disabled.");
+		getLogger().info("Disabled");
 	}
 
 	private void generateConfig() {
